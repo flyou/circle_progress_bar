@@ -33,18 +33,18 @@ class AdCounterViewTestDemoState extends State<AdCounterViewTestDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AdCounterViewTestDemo"),
+        title: Text("CircleProgressBar"),
       ),
       body: Container(
         child: Center(
           child: CircleProgressBar(
             200.0,
-            backgroundColor: Colors.red,
-            foreColor: Colors.amberAccent,
+            backgroundColor: Colors.grey,
+            foreColor: Colors.blueAccent,
             startNumber: 0,
-            maxNumber: 360,
+            maxNumber: 100,
             duration: 3000,
-            textPercent: false,
+            textPercent: true,
           ),
         ),
       ),
