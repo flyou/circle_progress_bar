@@ -17,18 +17,18 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(new MaterialApp(
-    home: AdCounterViewTestDemo(),
+    home: CircleProgressBarDemo(),
   ));
 }
 
-class AdCounterViewTestDemo extends StatefulWidget {
+class CircleProgressBarDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return AdCounterViewTestDemoState();
+    return CircleProgressBarDemoState();
   }
 }
 
-class AdCounterViewTestDemoState extends State<AdCounterViewTestDemo> {
+class CircleProgressBarDemoState extends State<CircleProgressBarDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

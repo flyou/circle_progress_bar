@@ -98,7 +98,7 @@ class CircleProgressBarState extends State<CircleProgressBar>
           size: Size(widget.size, widget.size),
           child: Center(
             child: Text(
-                "${widget.textPercent ? "$percent%" : "${_doubleAnimation.value.round()}/${widget.maxNumber.round()}"}",
+                "${_doubleAnimation.value.round() == widget.maxNumber ? "完成" : "${widget.textPercent ? "$percent%" : "${_doubleAnimation.value.round()}/${widget.maxNumber.round()}"}"}",
                 style: widget.textStyle == null
                     ? TextStyle(color: Colors.black, fontSize: 20)
                     : widget.textStyle),
